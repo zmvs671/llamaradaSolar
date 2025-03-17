@@ -24,7 +24,7 @@ class VientoSolar:
         """
         cursor = db_connection.cursor()
         cursor.execute("""
-            INSERT INTO viento_solar (fecha, temperatura_viento, densidad_viento, velocidad_viento)
+            INSERT INTO viento_solar (fecha, plasma_temperature, proton_density, plasma_speed)
             VALUES (%s, %s, %s, %s)
         """, (self.fecha, self.temperatura_viento, self.densidad_viento, self.velocidad_viento))
         db_connection.commit()
@@ -57,7 +57,7 @@ class VientoSolarDetector:
         Regresa:
             pd.DataFrame: DataFrame con los eventos detectados.
         """
-        eventos = df[(df['velocidad_viento'] > self.umbral_velocidad) & 
-                     (df['densidad_viento'] > self.umbral_densidad)]
+        eventos = df[(df['plasma_speed'] > self.umbral_velocidad) & 
+                     (df['proton_density'] > self.umbral_densidad)]
         return eventos
 
