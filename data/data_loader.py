@@ -22,7 +22,7 @@ def cargar_datos(txt_file, csv_file):
     df.columns = ["year", "day_of_year", "hour_of_day", "plasma_temperature", "proton_density", "plasma_speed"]
 
     #Convertir la fecha en formato YYYY-MM-DD HH:MM:SS
-    df['fecha'] = df.apply(lambda row: datetime(row["year"], 1, 1) + timedelta(days=row["day_of_year"] - 1, hours=row["hour_of_day"]), axis=1)
+    df['fecha'] = df.apply(lambda row: datetime(int(row["year"]), 1, 1) + timedelta(days=int(row["day_of_year"]) - 1, hours=int(row["hour_of_day"])), axis=1)
 
     #Guardar DataFrame como .csv
     df = df[["fecha", "plasma_temperature", "proton_density", "plasma_speed"]]
@@ -45,7 +45,8 @@ def cargar_a_sql(csv_file, db_password):
         host="localhost",
         user="root",
         password=db_password,
-        database="viento_solar_db"
+        database="viento_solar_db",
+	allow_local_infile=True
     )
 
     cursor = db_connection.cursor()
