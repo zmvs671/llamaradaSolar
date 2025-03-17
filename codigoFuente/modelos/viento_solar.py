@@ -1,6 +1,7 @@
 class VientoSolar:
     """
     Clase para representar un evento de viento solar y almacenar los datos en una base de datos
+    """
     def __init__(self, fecha, temperatura_viento, densidad_viento, velocidad_viento):
         """
         Inicializa la clase VientoSolar con los datos de un evento

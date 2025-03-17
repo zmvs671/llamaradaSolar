@@ -1,7 +1,10 @@
 import os
-from data_loader import cargar_datos
-from viento_solar import VientoSolar, VientoSolarDetector
+import sys
+import pandas as pd
+from modelos.viento_solar import VientoSolar, VientoSolarDetector
 import mysql.connector
+sys.path.append('./../data')
+from data_loader import cargar_datos
 
 def main():
     """
