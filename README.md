@@ -13,11 +13,13 @@ Este proyecto analiza datos de viento solar, detectando eventos significativos b
 - Se recomienda crear un entorno virtual antes de instalar los paquetes.
 - Ejecute el archivo `requeriments.txt` de la siguiente manera:
   pip install -r requirements.txt
-- Asegúrese de tener MySQL instalado y en ejecución.
-- Previo a la ejecución, configure la variable de entorno DB_PASSWORD con su contraseña de MySQL de la siguiente manera
-  export DB_PASSWORD="escriba_su_contraseña"
+- Asegúrese de tener MySQL instalado
+- Cree la base de datos `viento_solar_db` en MySQL con:
+  CREATE DATABASE viento_solar_db;
 
 ## Ejecución
-Ejecute en su terminal los scripts `data_loader.py` y `main.py` en ese orden, de la siguiente manera: 
+- Previo a la ejecución, configure la variable de entorno DB_PASSWORD con su contraseña de MySQL de la siguiente manera
+  export DB_PASSWORD="escriba_su_contraseña"
+- Ejecute en su terminal los scripts `data_loader.py` y `main.py` en ese orden, de la siguiente manera: 
   python3 data_loader.py
   python3 main.py
