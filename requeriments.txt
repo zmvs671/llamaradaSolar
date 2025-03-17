@@ -1,0 +1,4 @@
+os
+sys
+pandas
+mysql-connector-python
