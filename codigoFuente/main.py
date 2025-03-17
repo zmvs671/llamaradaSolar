@@ -23,8 +23,8 @@ def main():
     )
 
     #Ruta de los archivos
-    txt_file = "data/20240507_20240512.txt"
-    csv_file = "data/viento_solar.csv"
+    txt_file = "./../data/20240507_20240512.txt"
+    csv_file = "./../data/viento_solar.csv"
 
     #Procesar el archivo .txt y cargar los datos a MySQL
     cargar_datos(txt_file, csv_file)
