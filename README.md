@@ -1,6 +1,6 @@
 # llamaradaSolar
 
-#Detector de eventos de viento solar  
+# Detector de eventos de viento solar  
 
 Este proyecto analiza datos de viento solar, detectando eventos significativos basados en umbrales de velocidad y densidad. Se utilizan datos en formato `.txt`, los cuales son procesados y almacenados en una base de datos MySQL.
 
