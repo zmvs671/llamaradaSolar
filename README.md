@@ -16,6 +16,8 @@ Este proyecto analiza datos de viento solar, detectando eventos significativos b
 - Asegúrese de tener MySQL instalado
 - Cree la base de datos `viento_solar_db` en MySQL con:
   CREATE DATABASE viento_solar_db;
+- Ejecute la siguiente línea en MySQL para permitir que la base se actualice:
+  SET GLOBAL local_infile = 1;
 
 ## Ejecución
 - Previo a la ejecución, configure la variable de entorno DB_PASSWORD con su contraseña de MySQL de la siguiente manera
