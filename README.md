@@ -13,6 +13,7 @@ Este proyecto analiza datos de viento solar, detectando eventos significativos b
 ## Instalación
 - Se recomienda crear un entorno virtual antes de instalar los paquetes.
 - Ejecute el archivo `requeriments.txt` de la siguiente manera:
+  ```bash
   pip install -r requirements.txt
 - Asegúrese de tener MySQL instalado
 - Cree la base de datos `viento_solar_db` en MySQL con:
@@ -29,5 +30,6 @@ FLUSH PRIVILEGES;
 
 ## Ejecución
 - Ejecute en su terminal el script `main.py` indicando la ruta del archivo `.txt` que contiene los datos, de la siguiente manera:
-  python3 main.py `.\ruta\archivo.txt`
+  ```bash
+  python3 main.py `.\ruta\archivo.txt
 - Al ejecutar el script se le solicitará su contraseña de MySQL, esto con el único objetivo de poder guardar los datos de los vientos solares detectados.
