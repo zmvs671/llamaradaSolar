@@ -21,7 +21,6 @@ Este proyecto analiza datos de viento solar, detectando eventos significativos b
   SET GLOBAL local_infile = 1;
 
 ## Ejecución
-- Previo a la ejecución, configure la variable de entorno DB_PASSWORD con su contraseña de MySQL de la siguiente manera
-  export DB_PASSWORD="escriba_su_contraseña"
 - Ejecute en su terminal el script `main.py` indicando la ruta del archivo `.txt` que contiene los datos, de la siguiente manera:
   python3 main.py `.\ruta\archivo.txt`
+- Al ejecutar el script se le solicitará su contraseña de MySQL, esto con el único objetivo de poder guardar los datos de los vientos solares detectados.
