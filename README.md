@@ -17,8 +17,13 @@ Este proyecto analiza datos de viento solar, detectando eventos significativos b
 - Asegúrese de tener MySQL instalado
 - Cree la base de datos `viento_solar_db` en MySQL con:
   CREATE DATABASE viento_solar_db;
-- Ejecute la siguiente línea en MySQL desde terminal para permitir que la base se actualice:
-  SET GLOBAL local_infile = 1;
+- Ejecute la siguiente línea en MySQL desde terminal como root para permitir que la base se actualice:
+  `SET GLOBAL local_infile = 1;`
+- Cree un usuario con acceso a la base de datos en MySQL desde terminal de la siguiente manera, dándole los privilegios para su manejo:
+  `CREATE USER 'solaris'@'localhost' IDENTIFIED BY 'escriba su contraseña';
+  GRANT ALL PRIVILEGES ON viento_solar_db.* TO 'solaris'@'localhost';
+  FLUSH PRIVILEGES;`
+
 
 ## Ejecución
 - Ejecute en su terminal el script `main.py` indicando la ruta del archivo `.txt` que contiene los datos, de la siguiente manera:
