@@ -20,8 +20,8 @@ Este proyecto analiza datos de viento solar, detectando eventos significativos b
 - Ejecute la siguiente línea en MySQL desde terminal como root para permitir que la base se actualice:
   `SET GLOBAL local_infile = 1;`
 - Cree un usuario con acceso a la base de datos en MySQL desde terminal de la siguiente manera, dándole los privilegios para su manejo:
-  `CREATE USER 'solaris'@'localhost' IDENTIFIED BY 'escriba su contraseña';`
-  `GRANT ALL PRIVILEGES ON viento_solar_db.* TO 'solaris'@'localhost';`
+  `CREATE USER 'solaris'@'localhost' IDENTIFIED BY 'escriba su contraseña';` \\
+  `GRANT ALL PRIVILEGES ON viento_solar_db.* TO 'solaris'@'localhost';` \\
   `FLUSH PRIVILEGES;`
 
 
