@@ -26,7 +26,7 @@ def main():
 
     db_connection = mysql.connector.connect(
         host="localhost",
-        user="root",
+        user="solaris",
         password=db_password,
         database="viento_solar_db",
 	allow_local_infile=True
