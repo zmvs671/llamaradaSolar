@@ -3,7 +3,7 @@
 
 # Detector de eventos de viento solar  
 
-Este proyecto analiza datos de viento solar, detectando eventos significativos basados en umbrales de velocidad y densidad de plasma. Se utilizan datos en formato `.txt` extraídos de [OMNIWeb Data Explorer](https://omniweb.gsfc.nasa.gov/form/dx1.html) los cuales son procesados y almacenados en una base de datos MySQL, además de mostrar de manera gráfica la variación de la Temperatura de plasma [K], Densidad de protones [N/cm^3] y Velocidad de plasma [km/s] a través de la escala temporal.
+Este proyecto analiza datos de viento solar, detectando eventos significativos basados en umbrales de velocidad y densidad de plasma. Se utilizan datos en formato `.txt` extraídos de [OMNIWeb Data Explorer](https://omniweb.gsfc.nasa.gov/form/dx1.html) los cuales son procesados y almacenados en una base de datos MySQL, además de mostrar de manera gráfica la variación de la Temperatura de plasma $[K]$, Densidad de protones $[N/cm^3]$ y Velocidad de plasma $[km/s]$ a través de la escala temporal.
 
 ## Acciones
 - Procesa archivos `.txt` de viento solar y los convierte a `.csv`.  
