@@ -17,7 +17,7 @@ def main():
     contrasenia = getpass.getpass("Ingrese la contrasenia de MySQL: ")
     
     #Establecer la variable de entorno con la contraseña
-    os.environ["DB_PSSWORD"] = contrasenia
+    os.environ["DB_PASSWORD"] = contrasenia
 
     #Establecer la conexión a la base de datos
     db_password = os.getenv("DB_PASSWORD")
@@ -58,7 +58,7 @@ def main():
     detector = VientoSolarDetector(umbral_velocidad=400, umbral_densidad=5)
 
     #Detectar los eventos de vientos solares
-    eventos = detector.detectar_eventos(df)
+    eventos = detector.detectar_eventos(df) 
 
     #Cargar los eventos detectados a la base de datos
     for _, row in eventos.iterrows():
